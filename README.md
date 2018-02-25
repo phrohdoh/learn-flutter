@@ -4,7 +4,9 @@ A project to teach myself the [`Flutter`](https://flutter.io) mobile app framewo
 
 ## Running the project
 
-> Note: Make sure you have enabled USB debugging on your Android device and that you device has been plugged into your development machine
+Make sure you have enabled USB debugging on your Android device and that your device has been plugged into your development machine.
+
+See https://developer.android.com/studio/debug/dev-options.html#enable for more information.
 
 ```sh
 $ cd src
