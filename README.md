@@ -1,8 +1,16 @@
-# myapp
+# `myapp`
 
-A new Flutter project.
+A project to teach myself the [`Flutter`](https://flutter.io) mobile app framework.
 
-## Getting Started
+## Running the project
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+> Note: Make sure you have enabled USB debugging on your Android device and that you device has been plugged into your development machine
+
+```sh
+$ cd src
+$ flutter run
+```
+
+## Screenshots
+
+![](./screenshots/android.png)
