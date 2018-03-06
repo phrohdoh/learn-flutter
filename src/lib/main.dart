@@ -1,20 +1,26 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import './views/quotes/view.dart' show QuotesListPage;
 
-void main() => runApp(new MyApp());
+ThemeData theme = new ThemeData(
+  primaryColor: Colors.teal,
+  accentColor: Colors.redAccent,
+);
+
+void main() => runApp(new MaterialApp(
+  home: new QuotesListPage(),
+  theme: theme,
+));
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'My Test App',
+      title: 'SafeButler',
       theme: new ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: new MyHomePage(title: 'My Test App'),
+      home: new MyHomePage(title: 'SafeButler'),
     );
   }
 }
@@ -98,6 +104,13 @@ class _MyHomePageState extends State<MyHomePage> {
       },
     ));
 
+    var ltUberLyftText = new ListTile(
+      title: new Center(child: new Text(
+        "Sign up as a(n) Uber/Lyft driver",
+        style: const TextStyle(color: Colors.teal)
+      ))
+    );
+
     return new Scaffold(
       appBar: new AppBar(
         title: new Text(widget.title),
@@ -112,10 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ltSignupButton,
           ltLoginButton,
           new Divider(),
-          new Text(
-            'Sign up as an Uber/Lyft driver',
-            style: const TextStyle(color: Colors.teal),
-          ),
+          ltUberLyftText,
         ],
       ),
     );
