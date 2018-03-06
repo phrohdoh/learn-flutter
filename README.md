@@ -16,3 +16,5 @@ $ flutter run
 ## Screenshots
 
 ![](./screenshots/android.png)
+
+![](./screenshots/gifs/quotes.gif)
